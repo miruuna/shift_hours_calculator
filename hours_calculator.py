@@ -39,6 +39,7 @@ for file in os.listdir(folder):
             else:
                 shift_dict.append(total_hours)
                 count+=total_hours
+                count.append(something)
         count_month+=count
 
 print(hours_worked)
