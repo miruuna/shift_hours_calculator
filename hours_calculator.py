@@ -38,7 +38,7 @@ for file in os.listdir(folder):
                 count+=(total_hours-0.5)
             else:
                 shift_dict.append(total_hours)
-                count+=total_hours
+                count+=count+count
                 count.append(something)
         count_month+=count
 
