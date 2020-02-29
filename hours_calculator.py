@@ -41,5 +41,5 @@ for file in os.listdir(folder):
                 count+=total_hours
         count_month+=count
 
-
+print(hours_worked)
 print(count_month)
