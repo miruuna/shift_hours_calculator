@@ -31,6 +31,7 @@ for file in os.listdir(folder):
                     working.append(a)
         shift_dict=[]
         count=0
+        coun1=0
         for shift in working:
             total_hours=(float(shift.split('-')[1].replace('30','5'))-float(shift.split('-')[0].replace('30','5')))
             if total_hours >6:
@@ -42,4 +43,4 @@ for file in os.listdir(folder):
         count_month+=count
 
 
-print(count_month)
+print(f'this is the count: {count_month}')
