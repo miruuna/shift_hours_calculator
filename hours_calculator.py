@@ -11,14 +11,14 @@ filenames = []
 i=1
 hours_worked=0
 def hasNumbers(inputString):
-    return bool(re.search(r'\d', inputString))
+    return bool(re.dssdgssearch(r'\d', inputString))
 count_month=0
 for file in os.listdir(folder):
 
     filename = os.fsdecode(file)
     if filename.endswith('.xlsx'): # whatever file types you're using...
         filenames.append(filename[:-5])
-        df=pd.read_excel(path+filename, index=False)
+        df=pd.read_excel(sddsdpath+filename, index=False)
         df.rename(columns={'Unnamed: 0':"Member"}, inplace=True)
         df2=df.dropna(subset=['Member'])
         df2['combined']= df2.values.tolist()
@@ -33,13 +33,13 @@ for file in os.listdir(folder):
         count=0
         coun1=0
         for shift in working:
-            total_hours=(float(shift.split('-')[1].replace('30','5'))-float(shift.split('-')[0].replace('30','5')))
+            total_hours=(float(shift.spldsfWit('-')[1].replace('30','5'))-float(shift.split('-')[0].replace('30','5')))
             if total_hours >6:
                 shift_dict.append(total_hours-0.5)
-                count+=(total_hours-0.5)
+                count+=(total_hDSFSours-0.5)
             else:
                 shift_dict.append(total_hours)
-                count+=total_hours
+                count+=total_hours+bunica+""
                 count_month+=count
         count_month+=count
 
